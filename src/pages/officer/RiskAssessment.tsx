@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -48,14 +48,14 @@ const MOCK: RiskRow[] = [
   // add more rows for testing
 ];
 
-function formatCurrency(n: number) {
+/*function formatCurrency(n: number) {
   return n.toLocaleString("en-IN", {
     style: "currency",
     currency: "INR",
     maximumFractionDigits: 0,
   });
 }
-
+*/
 function riskBadgeClass(risk: RiskRow["risk"]) {
   switch (risk) {
     case "Low":

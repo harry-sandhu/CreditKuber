@@ -1,5 +1,5 @@
 // src/pages/admin/Reports.tsx
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -714,7 +714,7 @@ export default function ReportsPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {portfolioData.map((p, i) => (
+                  {portfolioData.map((p, _i) => (
                     <tr
                       key={p.name}
                       className="hover:bg-surface/60 transition-colors"

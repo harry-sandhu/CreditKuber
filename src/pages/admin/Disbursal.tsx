@@ -1,5 +1,5 @@
 // src/pages/admin/Disbursal.tsx
-import React, { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import DataTable from "@/components/ui/dataTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -215,19 +215,19 @@ export default function Disbursal() {
     });
   }, [rows, preset, query, colIP, fromDate, toDate]);
 
-  const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
+  //const pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
 
   function toggleSelect(id: number) {
     setSelected((s) => ({ ...s, [id]: !s[id] }));
   }
-  function selectAllOnPage(ids: number[], checked: boolean) {
+  /* function selectAllOnPage(ids: number[], checked: boolean) {
     setSelected((s) => {
       const copy = { ...s };
       ids.forEach((id) => (copy[id] = checked));
       return copy;
     });
   }
-
+*/
   const exportFiltered = useCallback(() => {
     const csv = csvFromRows(filtered);
     if (!csv) return alert("No data to export");

@@ -1,5 +1,5 @@
 // src/pages/admin/Collection.tsx
-import React, { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import DataTable from "@/components/ui/dataTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -236,13 +236,14 @@ export default function Collection() {
     (id: number) => setSelected((s) => ({ ...s, [id]: !s[id] })),
     []
   );
-  const selectAllOnPage = useCallback((ids: number[], checked: boolean) => {
+  /*  const selectAllOnPage = useCallback((ids: number[], checked: boolean) => {
     setSelected((s) => {
       const copy = { ...s };
       ids.forEach((id) => (copy[id] = checked));
       return copy;
     });
   }, []);
+  */
 
   const exportFiltered = useCallback(() => {
     const csv = csvFromRows(filtered);

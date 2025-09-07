@@ -1,5 +1,5 @@
 // src/pages/admin/Calling.tsx
-import React, { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import DataTable from "@/components/ui/dataTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

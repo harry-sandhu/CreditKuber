@@ -1,5 +1,5 @@
 // src/pages/admin/LoanReports.tsx
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import DataTable from "@/components/ui/dataTable";
 import { Button } from "@/components/ui/button";
 

@@ -1,5 +1,5 @@
 // src/pages/admin/PaymentDueDate.tsx
-import React, { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import DataTable from "@/components/ui/dataTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -163,7 +163,7 @@ function DueDrawer({
 
 /* ---------------- Page ---------------- */
 export default function PaymentDueDate() {
-  const [rows, setRows] = useState<DueRow[]>(MOCK);
+  const [rows] = useState<DueRow[]>(MOCK);
   const [template, setTemplate] = useState<(typeof TEMPLATES)[number]>("All");
   const [query, setQuery] = useState("");
   const [colMobile, setColMobile] = useState("");
@@ -223,7 +223,7 @@ export default function PaymentDueDate() {
     (id: number) => setSelected((s) => ({ ...s, [id]: !s[id] })),
     []
   );
-  const selectAllOnPage = useCallback(
+  /*  const selectAllOnPage = useCallback(
     (ids: number[], checked: boolean) =>
       setSelected((s) => {
         const c = { ...s };
@@ -232,7 +232,7 @@ export default function PaymentDueDate() {
       }),
     []
   );
-
+*/
   const exportFiltered = useCallback(() => {
     const csv = csvFromRows(filtered);
     if (!csv) return alert("No data to export");

@@ -1,5 +1,5 @@
 // src/pages/admin/Leads.tsx
-import React, { useMemo, useState, useCallback } from "react";
+import { useMemo, useState, useCallback } from "react";
 import DataTable from "@/components/ui/dataTable";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -244,14 +244,14 @@ export default function Leads() {
   const toggleSelect = useCallback((id: number) => {
     setSelected((s) => ({ ...s, [id]: !s[id] }));
   }, []);
-  const selectAllOnPage = useCallback((ids: number[], checked: boolean) => {
+  /*const selectAllOnPage = useCallback((ids: number[], checked: boolean) => {
     setSelected((s) => {
       const copy = { ...s };
       ids.forEach((id) => (copy[id] = checked));
       return copy;
     });
   }, []);
-
+*/
   // bulk actions
   const exportAllFiltered = useCallback(() => {
     const csv = csvFromRows(filtered);
@@ -366,7 +366,7 @@ export default function Leads() {
       {
         key: "status",
         label: "Status",
-        render: (v: any, row: Lead) => (
+        render: (_v: any, row: Lead) => (
           <select
             value={row.status}
             onChange={(e) =>

@@ -33,7 +33,7 @@ export default function Register() {
         email,
         password,
       });
-
+      console.log(res);
       setSuccess("Registration successful! Redirecting to login...");
       setTimeout(() => navigate("/login"), 1500);
     } catch (err: any) {

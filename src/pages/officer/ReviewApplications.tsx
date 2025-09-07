@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -87,7 +87,7 @@ export default function ReviewApplications() {
   >("All");
   const [page, setPage] = useState(0);
   const [pageSize, setPageSize] = useState(10);
-  const [selectedId, setSelectedId] = useState<number | null>(null);
+  //const [selectedId, setSelectedId] = useState<number | null>(null);
 
   // modals / inline forms
   const [requestDocs, setRequestDocs] = useState<{

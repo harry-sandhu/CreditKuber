@@ -190,7 +190,7 @@ export default function Settings() {
                 try {
                   const raw = localStorage.getItem(STORAGE_KEY);
                   if (!raw) return "never";
-                  const parsed = JSON.parse(raw);
+                  // const parsed = JSON.parse(raw);
                   // no timestamp stored — display that saved exists
                   return "saved";
                 } catch {
