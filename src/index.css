@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Core colors */
+  --color-primary: var(--green-primary);
+  --color-secondary: var(--green-secondary);
+  --color-gold: var(--gold);
+  --color-surface: var(--surface);
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  /* Semantic colors */
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --color-inverse-text: var(--inverse-text);
+  --accent-grad: var(--accent-grad);
+  --glass-01: var(--glass-01);
+  --glass-02: var(--glass-02);
+}
+
+.bg-surface {
+  background: var(--color-surface);
+}
+.text-color {
+  color: var(--color-text);
+}
+.text-muted {
+  color: var(--color-muted);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.bg-accent-grad {
+  background: var(--accent-grad);
+}
+
+/* utilities */
+.btn-ghost {
+  @apply bg-transparent border border-border text-text;
+}
+
+.text-inverse {
+  color: var(--inverse-text);
+}
+
+.bg-accent {
+  background: var(--accent-grad);
+}
+
+/* optional helper in index.css */
+.stat-value {
+  font-feature-settings: "tnum"; /* tabular numbers */
+  font-variant-numeric: tabular-nums;
+}
+
+/* Dark mode trigger */
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));

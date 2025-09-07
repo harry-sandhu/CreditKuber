@@ -1,0 +1,6 @@
+/* Tenant OMEGA override */
+body[data-tenant="omega"] {
+  --green-primary: #3a5a40; /* sage green */
+  --gold: #ffd700; /* bright gold */
+  --bg: #f5f5f0; /* warmer background */
+}

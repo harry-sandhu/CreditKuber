@@ -1,0 +1,5 @@
+/* Tenant ACME override */
+body[data-tenant="acme"] {
+  --green-primary: #004d40; /* teal green */
+  --gold: #daa520; /* goldenrod */
+}

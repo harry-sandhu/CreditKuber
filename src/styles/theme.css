@@ -1,0 +1,66 @@
+:root {
+  /* Colors (existing ones you already have) */
+  --green-primary: #006400;
+  --green-secondary: #a9c1a3;
+  --gold: #c9a635;
+  --surface: #fafaf6;
+  --bg: #ffffff;
+  --text: #2b2b2b;
+  --muted: #6b7280;
+  --border: #e6e6e6;
+
+  /* Semantic */
+  --success: #0a8f54;
+  --warning: #d97706;
+  --danger: #c02929;
+
+  /* New / recommended tokens */
+  --inverse-text: #ffffff; /* text on primary/dark surfaces */
+  --focus-ring: color-mix(in srgb, var(--gold) 55%, transparent 45%);
+  --glass-01: rgba(255, 255, 255, 0.04); /* subtle overlays */
+  --glass-02: rgba(0, 0, 0, 0.04);
+
+  /* Gradients */
+  --accent-grad: linear-gradient(135deg, var(--green-primary), var(--gold));
+
+  /* Spacing scale (optional, helpful) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+
+  /* Radii / shadow */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-soft: 0 6px 20px rgba(43, 43, 43, 0.08); /* you have this already */
+
+  /* Typographic scale (optional) */
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+}
+
+/* dark theme counterparts — tweak for contrast */
+[data-theme="dark"] {
+  --green-primary: #0a8f54;
+  --green-secondary: #234e36;
+  --gold: #b0882b;
+  --surface: #0f1724;
+  --bg: #0b1220;
+  --text: #e6eef8;
+  --muted: #9aa8bf;
+  --border: rgba(255, 255, 255, 0.06);
+
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --inverse-text: #0b1220;
+  --glass-01: rgba(255, 255, 255, 0.03);
+  --glass-02: rgba(255, 255, 255, 0.02);
+
+  --accent-grad: linear-gradient(135deg, var(--green-primary), var(--gold));
+  --shadow-soft: 0 10px 30px rgba(2, 6, 23, 0.6);
+}
