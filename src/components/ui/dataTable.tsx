@@ -71,7 +71,7 @@ export default function DataTable<T extends Record<string, any>>({
     setSelected((s) => ({ ...s, [id]: !s[id] }));
   }
 
-  function selectAllOnPage(checked: boolean) {
+  /*  function selectAllOnPage(checked: boolean) {
     const ids = current.map((r) => (r as any)[idKey] ?? Math.random());
     setSelected((s) => {
       const copy = { ...s };
@@ -79,7 +79,7 @@ export default function DataTable<T extends Record<string, any>>({
       return copy;
     });
   }
-
+*/
   function csvFromRows(rowsToExport: T[]) {
     if (!rowsToExport.length) return "";
     const keys = columns.map((c) => String(c.label));
