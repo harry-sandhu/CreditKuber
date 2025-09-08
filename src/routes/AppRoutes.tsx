@@ -30,6 +30,13 @@ const Users = lazy(() => import("@/pages/admin/Users"));
 const Payments = lazy(() => import("@/pages/admin/Payments"));
 const Reports = lazy(() => import("@/pages/admin/Reports"));
 const Settings = lazy(() => import("@/pages/admin/Settings"));
+const AdminCallings = lazy(() => import("@/pages/admin/Calling"));
+const AdminCollection = lazy(() => import("@/pages/admin/Collection"));
+const AdminCredit = lazy(() => import("@/pages/admin/Credit"));
+const AdminDisbursal = lazy(() => import("@/pages/admin/Disbursal"));
+const AdminLeads = lazy(() => import("@/pages/admin/Leads"));
+const AdminLoanReports = lazy(() => import("@/pages/admin/LoanReports"));
+const AdminPaymentDueDate = lazy(() => import("@/pages/admin/PaymentDueDate"));
 
 // Officer
 const ReviewApplications = lazy(
@@ -87,6 +94,16 @@ export default function AppRoutes() {
             <Route path="/admin/payments" element={<Payments />} />
             <Route path="/admin/reports" element={<Reports />} />
             <Route path="/admin/settings" element={<Settings />} />
+            <Route path="/admin/callings" element={<AdminCallings />} />
+            <Route path="/admin/collection" element={<AdminCollection />} />
+            <Route path="/admin/credit" element={<AdminCredit />} />
+            <Route path="/admin/disbursal" element={<AdminDisbursal />} />
+            <Route path="/admin/leads" element={<AdminLeads />} />
+            <Route path="/admin/loan-reports" element={<AdminLoanReports />} />
+            <Route
+              path="/admin/payment-due-date"
+              element={<AdminPaymentDueDate />}
+            />
           </Route>
 
           {/* Officer */}

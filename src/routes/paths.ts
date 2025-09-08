@@ -26,6 +26,13 @@ export const PATHS = {
     payments: "/admin/payments",
     reports: "/admin/reports",
     settings: "/admin/settings",
+    callings: "/admin/callings",
+    collection: "/admin/collection",
+    credit: "/admin/credit",
+    disbursal: "/admin/disbursal",
+    leads: "/admin/leads",
+    loanReports: "/admin/loan-reports",
+    paymentDueDate: "/admin/payment-due-date",
   },
 
   officer: {

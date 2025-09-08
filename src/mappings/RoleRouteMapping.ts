@@ -22,6 +22,14 @@ export const ROLE_ROUTES: Record<AppRole, { to: string; label: string }[]> = {
     { to: PATHS.admin.payments, label: "Payments" },
     { to: PATHS.admin.reports, label: "Reports" },
     { to: PATHS.admin.settings, label: "Settings" },
+
+    { to: PATHS.admin.collection, label: "Collection" },
+    { to: PATHS.admin.callings, label: "Callings" },
+    { to: PATHS.admin.credit, label: "Credit" },
+    { to: PATHS.admin.disbursal, label: "Disbursal" },
+    { to: PATHS.admin.leads, label: "Leads" },
+    { to: PATHS.admin.loanReports, label: "Loan Reports" },
+    { to: PATHS.admin.paymentDueDate, label: "Payment Due Date" },
   ],
   officer: [
     { to: PATHS.officer.review, label: "Review Applications" },
